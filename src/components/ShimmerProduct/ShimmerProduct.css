@@ -1,0 +1,25 @@
+.shimmer-product-container {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    flex-wrap: wrap;
+}
+
+.product-image-shimmer {
+    border-radius: 5px;
+    width: 220px;
+    height: 240px;
+    background-color: rgb(215, 215, 215);
+}
+.product-title-shimmer{
+    background-color: rgb(215, 215, 215);
+    width: 250px;
+    height: 20px;
+    border-radius: 5px;
+}
+
+.right{
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;
+}

@@ -14,7 +14,7 @@
     display: flex;
     flex: 1;
     flex-direction: column;
-    gap: 1rem;
+    gap: 3rem;
 }
 
 .button-container {
@@ -26,6 +26,8 @@
 
 .product-image {
     width: 200px;
+    height: 230px;
+    object-fit: contain;
 }
 
 .product-details {

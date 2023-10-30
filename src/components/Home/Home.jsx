@@ -5,13 +5,14 @@ import { Link } from 'react-router-dom'
 import { useParams } from 'react-router-dom'
 import Card from '../Card/Card'
 import './Home.css'
+import ShimmerHome from '../ShimmerHome/ShimmerHome'
 
 const Home = () => {
     const {products}= useContext(ProductContext)
 
     
     
-    console.log(products);
+  if(products.length  === 0) return <ShimmerHome/>
   return (
     <div className='home-wrapper'>
         <div className="home-container paddings maxWidth">

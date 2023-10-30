@@ -6,22 +6,21 @@ import Contact from "./Pages/Contact/Contact";
 import Cart from "./Pages/Cart/Cart";
 import Home from "./components/Home/Home";
 import ProductPage from "./Pages/ProductPage/ProductPage";
-
+import CartProvider from "./context/CartContext";
 import ProductContextProvider from "./context/ProductContext";
-import CartContextProvider from "./context/CartContext";
-import { useCartContext } from "./context/CartContext";
-const App = () => {
-  const {addToCart,removeFromCart,cart}=useCartContext()
-  
 
+
+
+const App = () => {
   return (
     <div className="App">
-      <CartContextProvider value={{addToCart,removeFromCart,cart}} >
+      <CartProvider>
         <ProductContextProvider>
           <Header />
           <Outlet />
+          
         </ProductContextProvider>
-      </CartContextProvider>
+      </CartProvider>
     </div>
   );
 };
