@@ -33,7 +33,7 @@ const Header = () => {
           </li>
           <button className="btn">
             <li>
-              <Link style={{color:"white"}} className="nav-link" to="/contact">
+              <Link  className="nav-link" to="/contact">
                 Contact
               </Link>
             </li>
