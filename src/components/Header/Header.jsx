@@ -1,17 +1,16 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./Header.css";
-import {HiMenu} from 'react-icons/hi'
+import { HiMenu } from "react-icons/hi";
 
 const Header = () => {
+  const [openMenu, setOpenMenu] = useState(false);
 
-  const [openMenu,setOpenMenu]=useState(false)
-  
-  const getStyles = (openMenu)=>{
-    if(document.documentElement.clientWidth <= 768){
-      return  {top: !openMenu && -300  }
+  const getStyles = (openMenu) => {
+    if (document.documentElement.clientWidth <= 768) {
+      return { top: !openMenu && -300 };
     }
-  }
+  };
 
   return (
     <header className="header paddings maxWidth">
@@ -20,8 +19,7 @@ const Header = () => {
       </div>
       <nav className="nav">
         <ul className="nav-links" style={getStyles(openMenu)}>
-         
-           <li>
+          <li>
             <Link className="nav-link" to="/">
               Home
             </Link>
@@ -31,17 +29,17 @@ const Header = () => {
               Cart
             </Link>
           </li>
-          <button className="btn">
-            <li>
-              <Link  className="nav-link" to="/contact">
+          <li>
+            <button className="btn">
+              <Link className="nav-link" to="/contact">
                 Contact
               </Link>
-            </li>
-          </button>
-         </ul>
-        
+            </button>
+          </li>
+        </ul>
+
         <div className="menu-icon">
-            <HiMenu  onClick={()=>setOpenMenu(prev => !prev)}/>
+          <HiMenu onClick={() => setOpenMenu((prev) => !prev)} />
         </div>
       </nav>
     </header>
