@@ -19,8 +19,9 @@ const Header = () => {
         <h4>Fake</h4>
       </div>
       <nav className="nav">
-        <div className="nav-links" style={getStyles(openMenu)}>
-          <li>
+        <ul className="nav-links" style={getStyles(openMenu)}>
+         
+           <li>
             <Link className="nav-link" to="/">
               Home
             </Link>
@@ -37,7 +38,8 @@ const Header = () => {
               </Link>
             </li>
           </button>
-        </div>
+         </ul>
+        
         <div className="menu-icon">
             <HiMenu  onClick={()=>setOpenMenu(prev => !prev)}/>
         </div>
