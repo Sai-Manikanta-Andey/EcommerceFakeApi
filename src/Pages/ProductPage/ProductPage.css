@@ -5,10 +5,11 @@
     gap: 1rem;
 }
 
-.product-wrapper{
+.product-wrapper {
     margin: auto;
     width: 100%;
 }
+
 .image-button-container {
 
     display: flex;
@@ -23,6 +24,8 @@
     gap: 1rem;
     flex-wrap: wrap;
 }
+
+
 
 .product-image {
     width: 200px;
@@ -39,7 +42,7 @@
 }
 
 @media (max-width:640px) {
-    .product-container{
-       flex-direction: column;
+    .product-container {
+        flex-direction: column;
     }
 }

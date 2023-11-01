@@ -51,26 +51,13 @@ li {
 
 }
 
-@media (max-width:768px) {
-    .nav-links {
-        display: flex;
-        gap: 2rem;
-        z-index: 1111;
-        position: absolute;
-        top: 1.5rem;
-        left: -10rem;
-        border-radius: 5px;
-        background: white;
-        flex-direction: column;
-        padding: 1rem;
-        box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
-        transition: all 300ms ease-in;
-        font-size: 1rem;
-    }
+.home{
+    text-decoration: none;
+    color: black;
+}
 
-    .menu-icon {
-        display: block;
-    }
+@media (max-width:768px) {
+    
 
     .btn {
         font-size: 1rem;

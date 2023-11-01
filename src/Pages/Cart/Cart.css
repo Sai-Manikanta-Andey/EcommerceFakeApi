@@ -29,11 +29,11 @@
     
     text-align: center;
 }
-
-.delete{
+.quantity-btn{
+    padding: .2rem .6rem;
+    border-radius: 4px;
     border: none;
-    outline:none;
-    background: transparent;
+    outline: none;
 }
 
 @media (max-width:760px) {
@@ -45,7 +45,7 @@
 @media (max-width:500px) {
     .cart-img{
         max-width: 60px;
-        max-height: 50px;
+        max-height: 80px;
     }
 }
 

@@ -2,6 +2,9 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./Header.css";
 import { HiMenu } from "react-icons/hi";
+import {FaCartPlus} from 'react-icons/fa'
+import { ToastContainer,toast } from "react-toastify";
+
 
 const Header = () => {
   const [openMenu, setOpenMenu] = useState(false);
@@ -15,32 +18,18 @@ const Header = () => {
   return (
     <header className="header paddings maxWidth">
       <div className="logo">
-        <h4>Fake</h4>
+        <Link className="home" to="/">
+          <h4>Fake</h4>
+        </Link>
       </div>
       <nav className="nav">
         <ul className="nav-links" style={getStyles(openMenu)}>
           <li>
-            <Link className="nav-link" to="/">
-              Home
-            </Link>
-          </li>
-          <li>
             <Link className="nav-link" to="/cart">
-              Cart
+              <FaCartPlus />
             </Link>
-          </li>
-          <li>
-            <button className="btn">
-              <Link className="nav-link" to="/contact">
-                Contact
-              </Link>
-            </button>
           </li>
         </ul>
-
-        <div className="menu-icon">
-          <HiMenu onClick={() => setOpenMenu((prev) => !prev)} />
-        </div>
       </nav>
     </header>
   );
