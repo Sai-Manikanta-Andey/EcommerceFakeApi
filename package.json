@@ -12,6 +12,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "generate-robotstxt": "^8.0.3",
     "parcel": "^2.10.1",
     "process": "^0.11.10"
   },

@@ -25,8 +25,8 @@ const Header = () => {
       <nav className="nav">
         <ul className="nav-links" style={getStyles(openMenu)}>
           <li>
-            <Link className="nav-link" to="/cart">
-              <FaCartPlus />
+            <Link className="nav-link" to="/cart"  >
+              <FaCartPlus alt='cart' />
             </Link>
           </li>
         </ul>
