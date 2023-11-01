@@ -1,6 +1,6 @@
 import React, { useContext, useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import { MAIN_URL } from "../../utils/Constants";
+import { MAIN_URL } from "../../../utils/Constants";
 import "./ProductPage.css";
 import { BsStarFill } from "react-icons/bs";
 import { CartContext } from "../../context/CartContext";
